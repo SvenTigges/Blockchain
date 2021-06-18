@@ -1,5 +1,6 @@
 const Block = require("./block"); 
 
+// Testvorraussetzungen 
 describe("Block", () => {
     let data, lastBlock, block;
 
@@ -8,6 +9,7 @@ describe("Block", () => {
         lastBlock = Block.genesis();
         block = Block.mineBlock(lastBlock, data);
     });
+
 
   it("set the ´data´ to match the inpt", () =>{
       expect(blok.data).toEqual(data);
